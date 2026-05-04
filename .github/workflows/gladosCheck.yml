@@ -1,5 +1,12 @@
 name: auto check
 
+# 显式授予删除工作流运行记录的权限
+permissions:
+  # actions: write 允许读取和删除工作流运行记录
+  actions: write
+  # contents: read 允许检出代码（如果需要）
+  contents: read
+
 on:
   workflow_dispatch:
   push:
