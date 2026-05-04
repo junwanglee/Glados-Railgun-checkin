@@ -56,4 +56,11 @@ jobs:
         retain_days: 7
         keep_minimum_runs: 7
         delete_run_by_conclusion_pattern: success
+
+permissions:
+  # Allow access to commit list
+  contents: read
+  # Allow access to adding comments
+  discussions: write
+  pull-requests: write
  
